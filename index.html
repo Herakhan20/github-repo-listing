@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Repositories Listing</title>
+    <title>Github Repositories</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, GitHub!</h1>
+    <div class="container">
+        <h1>Github Repositories</h1>
+        <div class="search-bar">
+            <input type="text" id="username" placeholder="Enter GitHub username">
+            <button onclick="fetchRepositories()">Fetch Repositories</button>
+        </div>
+        <div id="loader" class="loader"></div>
+        <ul id="repo-list"></ul>
+        <div id="pagination"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
